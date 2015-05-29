@@ -1,7 +1,7 @@
-Base path: C:/Program Files/Unity/Editor/Data
-Pipe name: \\.\pipe\UnityShaderCompiler-64bit-1-4512
+Base path: /Volumes/Macintosh HD/Applications/Unity/Unity.app/Contents
+Pipe name: \\.\pipe\UnityShaderCompiler-64bit-1-2007216896
 Cmd: getPlatforms
 Cmd: compileSnippet
-  api=4 type=0 insize=938 outsize=4378 kw=DIRECTIONAL SHADOWS_SCREEN ok=1
+  api=0 type=0 insize=9591 outsize=6366 kw=UNITY_COLORSPACE_GAMMA ok=1
 Cmd: compileSnippet
-  api=4 type=1 insize=938 outsize=5751 kw=DIRECTIONAL SHADOWS_SCREEN ok=1
+  api=0 type=1 insize=9591 outsize=6 kw=UNITY_COLORSPACE_GAMMA ok=1
