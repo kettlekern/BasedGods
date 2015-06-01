@@ -1,9 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+using UnityEngine.UI;
 
 public class Health : MonoBehaviour {
 	TextMesh tm;
+	public Text resource;
 	// Use this for initialization
 	void Start () {
 		tm = GetComponent<TextMesh> ();
@@ -22,11 +23,15 @@ public class Health : MonoBehaviour {
 	
 	// Decrease the current Health by removing one '-'
 	public void decrease() {
-		if (current () > 0)
+		if (current () > 1)
 			tm.text = tm.text.Remove (tm.text.Length - 1);
-		else {
+		else if (transform.parent.gameObject != null) {
 			Destroy (transform.parent.gameObject);
-
+			if (transform.parent.gameObject != null) {
+				God.gold += Monster.worth;
+				Debug.Log ("+" + Monster.worth + ", Total: " + God.gold.ToString());
+				GameObject.Find("Gold").GetComponent<Text>().text = "Gold: " + God.gold.ToString();
+			}
 		}
 	}
 }
