@@ -1,12 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Health : MonoBehaviour {
 
+public class Health : MonoBehaviour {
 	TextMesh tm;
 	// Use this for initialization
 	void Start () {
 		tm = GetComponent<TextMesh> ();
+
 	}
 	
 	// Update is called once per frame
@@ -21,9 +22,11 @@ public class Health : MonoBehaviour {
 	
 	// Decrease the current Health by removing one '-'
 	public void decrease() {
-		if (current() > 1)
-			tm.text = tm.text.Remove(tm.text.Length - 1);
-		else
-			Destroy(transform.parent.gameObject);
+		if (current () > 0)
+			tm.text = tm.text.Remove (tm.text.Length - 1);
+		else {
+			Destroy (transform.parent.gameObject);
+
+		}
 	}
 }

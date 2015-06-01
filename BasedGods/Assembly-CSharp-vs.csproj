@@ -47,15 +47,16 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Alec_Map_Base\Scripts\Buildplace.cs" />
+     <Compile Include="Assets\Alec_Map_Base\Scripts\Bullet.cs" />
+     <Compile Include="Assets\Alec_Map_Base\Scripts\God.cs" />
      <Compile Include="Assets\Alec_Map_Base\Scripts\Health.cs" />
      <Compile Include="Assets\Alec_Map_Base\Scripts\Monster.cs" />
      <Compile Include="Assets\Alec_Map_Base\Scripts\Monster2.cs" />
      <Compile Include="Assets\Alec_Map_Base\Scripts\Spawn.cs" />
+     <Compile Include="Assets\Alec_Map_Base\Scripts\Tower.cs" />
      <Compile Include="Assets\ChangeCamera.cs" />
      <Compile Include="Assets\Scenes + max&apos;s scripts\MenuFunctionality.cs" />
      <Compile Include="Assets\Towers\CannonControl.cs" />
-     <Compile Include="Assets\Towers\tutorial\Bullet.cs" />
-     <Compile Include="Assets\Towers\tutorial\Tower.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

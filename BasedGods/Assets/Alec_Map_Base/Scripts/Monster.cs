@@ -2,6 +2,8 @@
 using System.Collections;
 
 public class Monster : MonoBehaviour {
+	public static int worth = 5;
+
 
 	// Use this for initialization
 	void Start () {
@@ -13,6 +15,7 @@ public class Monster : MonoBehaviour {
 
 	void OnTriggerEnter(Collider co) {
 		// If castle then deal Damage, destroy self
+
 		if (co.name == "Base 1") {
 			co.GetComponentInChildren<Health>().decrease();
 			Destroy(gameObject);
