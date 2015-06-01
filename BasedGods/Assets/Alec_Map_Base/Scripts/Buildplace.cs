@@ -4,9 +4,13 @@ using System.Collections;
 public class Buildplace : MonoBehaviour {
 	//Tower should be built
 	public GameObject towerPrefab;
+	public bool created = false;
 
 	void OnMouseUpAsButton() {
-		GameObject g = (GameObject)Instantiate(towerPrefab);
-		g.transform.position = transform.position + Vector3.up;
+		if (!created) {
+			GameObject g = (GameObject)Instantiate (towerPrefab);
+			g.transform.position = transform.position + Vector3.up;
+			created = true;
+		}
 	}
 }
